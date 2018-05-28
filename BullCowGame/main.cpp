@@ -3,9 +3,24 @@
 
 using namespace std;
 
-void PrintIntro() 
+void PrintIntro();
+string GetGuessAndPrintBack();
+
+// entry point for application
+int main() 
+{ 
+	PrintIntro();
+	GetGuessAndPrintBack();
+	GetGuessAndPrintBack();
+
+	cout << endl;
+
+	return 0;
+}
+
+// Introduce Game
+void PrintIntro()
 {
-	// Introduce Game
 	// Constant Expression
 	constexpr int WORD_LENGTH = 5;
 	cout << "Welcome to Bulls and Cows, a fun word game.\n";
@@ -15,24 +30,14 @@ void PrintIntro()
 	return;
 }
 
-int main() 
-{ 
-	PrintIntro();
-
-	// get guest from the player
+// get guest from the player
+string GetGuessAndPrintBack() 
+{
 	cout << "Enter your guess: ";
 	string Guess = "";
-	getline(cin,Guess);
-	// repeat the guess back to them
-	cout << "Your guess was: " << Guess << endl;
-
-	// get guest from the player
-	cout << "Enter your guess: ";
 	getline(cin, Guess);
-	// repeat the guess back to them
+
+	//print the guess back to them
 	cout << "Your guess was: " << Guess << endl;
-
-	cout << endl;
-
-	return 0;
+	return Guess;
 }
