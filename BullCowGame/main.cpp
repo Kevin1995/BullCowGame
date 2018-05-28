@@ -10,10 +10,14 @@ string GetGuessAndPrintBack();
 int main() 
 { 
 	PrintIntro();
-	GetGuessAndPrintBack();
-	GetGuessAndPrintBack();
 
-	cout << endl;
+	// loop for the number of guesses
+	constexpr int NUMBER_OF_TURN = 5;
+	for (int count = 1; count <= NUMBER_OF_TURN; count++)
+	{
+		GetGuessAndPrintBack();
+		cout << endl;
+	}
 
 	return 0;
 }
