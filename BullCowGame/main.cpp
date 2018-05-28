@@ -45,10 +45,16 @@ void PlayGame()
 	// loop for the number of guesses
 	for (int count = 1; count <= MaxTries; count++)
 	{
-		std::string Guess = GetGuess();
+		std::string Guess = GetGuess(); //TODO make loop checking valid guesses
+
+		// Submit valid guess to the game
+		// Print number of bulls and cows
+
 		std::cout << "Your guess was: " << Guess << std::endl;
 		std::cout << std::endl;
 	}
+
+	// TODO sumarise game
 }
 
 // get guest from the player
