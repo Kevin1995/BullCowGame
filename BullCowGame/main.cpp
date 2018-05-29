@@ -17,7 +17,7 @@ bool AskToPlayAgain();
 
 FBullCowGame BCGame; // instantiate a new game
 
-					 // the entry point for our application
+// the entry point for our application
 int main()
 {
 	bool bPlayAgain = false;
